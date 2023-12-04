@@ -1,3 +1,26 @@
 .MODEL SMALL
 .STACK 100H
 .DATA
+MAIN_MENU DB ,0DH,0AH,"Calculater",0DH,0AH
+          DB "Press 'A' For ADDITION",0DH,0AH
+          DB "Press 'S' For SUBTRACTION",0DH,0AH
+          DB "Press 'M' For MULTIPLICATION",0DH,0AH
+          DB "Press 'D' For DIVISION",0DH,0AH
+          DB "Press 'E' For EXIT",0DH,0AH
+          DB "Press 'R' For RETURN to Main Menu",0DH,0AH
+          DB "*******************************",0DH,0AH
+          DB "*******************************",0DH,0AH
+          DB "Enter Your CHOICE",0DH,0AH,'$'     
+     NUM1 DB "Enter First Number",0DH,0AH,'$'
+     NUM2 DB ,0DH,0AH,"Enter Second Number",0DH,0AH,'$'
+ADD1 DB ,0DH,0AH,"FOR ADDITION",0DH,0AH,'$'
+SUB1 DB ,0DH,0AH,"FOR SUBTRACTION",0DH,0AH,'$'
+MUL1 DB ,0DH,0AH,"FOR MULTIPLICATION",0DH,0AH,'$' 
+DIV1 DB ,0DH,0AH,"FOR DIVISION",0DH,0AH,'$'
+EX DB ,0DH,0AH,"GOOD BYE AND HAVE A NICE TIME :)",0DH,0AH,'$'  
+       ANS DB ,0DH,0AH,"ANSWER ",0DH,0AH,'$' 
+       CONTINUE DB ,0DH,0AH,"DO YOU WANT TO CONTINUE",0DH,0AH,'$'       
+          OP1 DB ?
+          OP2 DB ?
+          Operand DB ?
+          CON DB ?
